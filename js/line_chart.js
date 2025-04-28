@@ -1,4 +1,6 @@
 // Line Chart - Spot Power Prices 1998-2024
+(() => {
+
 const lineSVG = d3.select("#line-chart")
   .append("svg")
   .attr("viewBox", "0 0 600 400")
@@ -68,3 +70,4 @@ const lineChart = lineSVG.append("g")
     .attr("d", line);
 
 });
+})();
