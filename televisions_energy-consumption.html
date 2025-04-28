@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Televisions - Energy Consumption</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/PowerIcon.png" alt="Power Logo">
+                </a>
+            </div>
+            <h1 class="nav-title">Televisions - Energy Consumption</h1>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <!-- <li><a href="televisions.html">Televisions</a></li> -->
+                <li><a href="televisions_energy-consumption.html" class="active">Televisions - Energy Consumption</a></li>
+                <li><a href="about-us.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="diagram-section content-section">
+        <div class="diagram-container">
+            <img src="images/Televisions - Energy Consumption Display Picture.png" alt="Sustainability of Televisions" class="diagram-image">
+        </div>
+    </section>
+    <main>
+    <h1>Smart TV Choices for Eco-Conscious Australians</h1>
+    
+    <!-- Introduction -->
+    <section>
+        <h2>Why Energy Efficiency Matters</h2>
+        <p>Australian households spend an average of <span class="highlight">$150/year</span> powering their TVs. 
+        This analysis reveals how choosing energy-efficient models can cut costs by up to 60%.</p>
+    </section>
+
+    <!-- Chart 1: Energy Use by Screen Size -->
+    <section class="chart">
+        <h2>1. Screen Size vs. Energy Consumption</h2>
+        <img src="images/Televisions - Energy Consumption/Screen Size vs. Energy Consumption.png" alt="Scatter plot showing screen size vs. kWh/year">
+        <p><strong>Key Insight:</strong> While larger screens (75"+) often use more energy, 
+        <span class="highlight">OLED TVs like the Philips 55OLED935/79</span> defy this trend, 
+        using 30% less power than similarly sized LCD models.</p>
+    </section>
+
+    <!-- Chart 2: Top Efficient Brands -->
+    <section class="chart">
+        <h2>2. Most Efficient TV Screen Technology</h2>
+        <img src="images/Pie Chart.png" alt="Pie chart showing energy efficiency by TV screen technology">
+        <div class="top-performers">
+            <p><strong>Top Performers in increasing your Electricity Bill:</strong></p>
+            <ul>
+                <li>Walton (43"): <span class="highlight">138 kWh/year</span> (7-star rated)</li>
+                <li>GORILLA (32"): <span class="highlight">104 kWh/year</span></li>
+                <li>STAN CASH (18"): <span class="highlight">60 kWh/year</span></li>
+            </ul>
+            <br>
+            <p><b>Aussies are discouraged from purchasing OLED, and maybe opt for LCD</b></p>
+        </div>
+    </section>
+
+    <!-- Energy Consumption by Display Type -->
+    <section class="chart">
+        <h2>3. Energy Use Breakdown by TV Technology</h2>
+        <div class="chart-row">
+            <!-- LCD (LED) -->
+            <div class="sub-chart">
+                <img src="images/Televisions - Energy Consumption/Energy consumed by each brand for LCD (LED).png" 
+                     alt="Pie chart showing AIMA, SONY, PANASONIC, EKO, HISENSE, PHILIPS, KOGAN energy consumption">
+                <h3>LCD (LED) TVs</h3>
+                <p><strong>Key Insight:</strong> <span class="highlight">AIMA</span> dominates energy use in LED-LCD category, 
+                while Kogan shows relatively lower consumption.</p>
+            </div>
+
+            <!-- Standard LCD -->
+            <div class="sub-chart">
+                <img src="images/Televisions - Energy Consumption/Energy consumed by each brand for LCD.png" 
+                     alt="Pie chart of KOGAN, AIVIA, EKO, PHILIPS, PANASONIC, SONY, HISENSE energy use">
+                <h3>Standard LCD TVs</h3>
+                <p><strong>Pattern:</strong> <span class="highlight">AIVIA and Hisense</span> account for over 50% of 
+                standard LCD energy consumption in this dataset.</p>
+            </div>
+
+            <!-- OLED -->
+            <div class="sub-chart">
+                <img src="images/Televisions - Energy Consumption/Energy consumed by each brand for OLED.png" 
+                     alt="Pie chart comparing EXO, AWIA, PHILIPS, HISENSE, KOGAN, PANASONIC, SONY energy consumption">
+                <h3>OLED TVs</h3>
+                <p><strong>Surprise:</strong> Despite premium pricing, <span class="highlight">PHILIPS OLED models</span> 
+                show 25% higher energy use than Sony/Kogan equivalents.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recommendations -->
+    <section>
+        <h2>How to Choose Wisely</h2>
+        <ol>
+            <li>Prioritize <span class="highlight">6-star+ rated models</span> (e.g., Walton, HubbL)</li>
+            <li>For large screens, choose <span class="highlight">OLED technology</span></li>
+            <li>Use the official <a href="https://www.energyrating.gov.au/">ENERGY STAR® registry</a></li>
+        </ol>
+    </section>
+    <section class="calculator-section">
+        <h2>Energy Consumption Calculator</h2>
+        <form id="energy-calculator">
+            <label for="wattage">TV Wattage (W):</label>
+            <input type="number" id="wattage" name="wattage" placeholder="e.g., 100" required>
+            <br><br>
+            <label for="hours">Hours Used Per Day:</label>
+            <input type="number" id="hours" name="hours" placeholder="e.g., 5" required>
+            <br><br>
+            <label for="rate">Electricity Rate ($/kWh):</label>
+            <input type="number" id="rate" name="rate" placeholder="e.g., 0.25" step="0.01" required>
+            <br><br>
+            <button type="button" onclick="calculateEnergy()">Calculate</button>
+        </form>
+        <p id="calculator-result" style="margin-top: 20px; font-weight: bold; color: #333;">Estimated Annual Cost will appear here.</p>
+    </section>
+
+</main>   
+
+    <footer>
+        <p>&copy; <span id="year"></span> Emanuel (104515032) | Acknowledgment: GitHub Copilot was used to generate the HTML, CSS and JavaScript code</p>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

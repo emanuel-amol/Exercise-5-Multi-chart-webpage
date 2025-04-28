@@ -1,0 +1,243 @@
+.responsive-svg-container {
+    margin-right: auto;
+    margin-left: auto;
+    width: 100%;
+    max-width: 1200px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    font-size: 20px;
+}
+
+header {
+    background-color: #e47410;
+    padding: 10px 20px;
+}
+
+h1 {
+    font-size: 2.5em;
+    text-align: center;
+    margin: 40px 0;
+    color: #e47410;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    padding: 10px 20px;
+    gap: 20px; 
+}
+
+.logo img {
+    width: 100px;
+    height: auto;
+
+}
+
+.nav-title {
+    font-size: 2em;
+    color: white;
+    margin: 0;
+}
+
+.nav-links {
+    margin-left: auto; 
+    list-style-type: none; 
+    display: flex; 
+    gap: 15px; 
+    padding: 0; 
+    align-items: center; 
+}
+
+.nav-links a {
+    text-decoration: none; 
+    color: white; 
+    font-size: 1.2em; 
+    padding: 5px 10px; 
+    border-radius: 5px; 
+    transition: background-color 0.3s ease; 
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    background-color: #16a085; 
+    color: white; 
+}
+
+.nav-links a:hover {
+    background-color: #16a085; 
+    color: white; 
+}
+
+section, .content-section {
+    max-width: 1400px; 
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.chart {
+    max-width: 1400px; 
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.chart img {
+    max-width: 80%; 
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.chart-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap; 
+}
+
+.sub-chart {
+    flex: 1;
+    max-width: 30%; 
+    text-align: center;
+}
+
+.sub-chart img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.sub-chart h3 {
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.sub-chart p {
+    font-size: 0.9em;
+    color: #555;
+}
+
+.sub-chart {
+    flex: 1 1 300px;
+    background-color: #f8f9fa;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.highlight {
+    background-color: #ffc107;
+    padding: 2px 5px;
+    border-radius: 3px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #e47410;
+    color: white;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#csv-table-container {
+    overflow-x: auto; 
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.calculator-section {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+}
+
+.calculator-section h2 {
+    font-size: 1.8em;
+    color: #e47410;
+    margin-bottom: 15px;
+}
+
+.calculator-section form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.calculator-section form input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.calculator-section form button {
+    background-color: #16a085;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+.calculator-section form button:hover {
+    background-color: #13876c;
+}
+
+#calculator-result {
+    color: #333;
+}
