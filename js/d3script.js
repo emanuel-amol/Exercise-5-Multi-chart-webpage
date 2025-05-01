@@ -31,7 +31,7 @@ const createBarChart = (data) => {
     .attr("y", 0)
     .attr("width", d => xScale(d.count))
     .attr("height", yScale.bandwidth())
-    .attr("fill", "blue");
+    .attr("fill", "teal");
 
   barAndLabel
     .append("text")
